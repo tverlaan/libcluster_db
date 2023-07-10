@@ -4,7 +4,7 @@ defmodule LibclusterDb.MixProject do
   def project do
     [
       app: :libcluster_db,
-      version: "0.1.0",
+      version: "0.2.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -32,7 +32,7 @@ defmodule LibclusterDb.MixProject do
 
   defp deps do
     [
-      {:libcluster, "~> 3.3.3"},
+      {:libcluster, "~> 3.3"},
       {:ecto_sql, "~> 3.10"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
